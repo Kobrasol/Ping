@@ -1,0 +1,174 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; CHARSET=Windows-1251'/>
+<title>
+Ping IP
+</title>
+<hta:application
+	Icon = 'config/PE17.ICO'
+	id = 'oHTA'
+	Border='thin'
+	BorderStyle='normal'
+	Caption='yes'
+	ContextMenu='yes'
+	InnerBorder='yes'
+	MAXIMIZEBUTTON = 'no'
+	MINIMIZEBUTTON = 'yes'
+	Navigable='no'
+	SCROLL='no'
+	ScrollFlat='no'
+	Selection='no'
+	ShowInTaskbar='yes'
+	SingleInstance='no'
+	SysMenu='yes'
+	Version='3.1 RC2'
+	WindowState='normal'
+	applicationName = 'Ping'
+/>
+		<script src='config/myFunction_.vbs' type='text/vbscript'></script>
+		<link href='config/confcss.css' rel='stylesheet' type='text/css' media='screen' />
+
+</head>
+<body onload='WindowOnLoad()'>
+<body bgcolor=buttonface style='border: none; font: 8pt sans-serif' scroll=no text=buttontext>
+
+<TABLE border='1'>
+<TR>
+	<TH><FONT SIZE='' COLOR=''>v</FONT>
+	<TH><img src='config/5.png'>
+	<TH><FONT SIZE='' COLOR='#0000FF'>Узел:</FONT>
+	<TH><FONT SIZE='' COLOR='#0000FF'>IP Adress:</FONT>
+	<TH><FONT SIZE='' COLOR='#0000FF'>Ping ms</FONT>
+	<TH><img src='config/1.png'>
+	<TH><img src='config/2.png'>
+	<TH><FONT SIZE='2' COLOR='#FF0000'>% Потерь:</FONT>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin1"/>
+	<TH id='Dostup1'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t1' style='text-align: left'>
+	<TH id='CompName1' style='text-align: left'>
+	<TH id='Time1' style='text-align: left'>
+	<TH id='d1' style='text-align: left'>
+	<TH id='nd1' style='text-align: left'>
+	<TH id='pr1' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin2"/>
+	<TH id='Dostup2'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t2' style='text-align: left'>
+	<TH id='CompName2' style='text-align: left'>
+	<TH id='Time2' style='text-align: left'>
+	<TH id='d2' style='text-align: left'>
+	<TH id='nd2' style='text-align: left'>
+	<TH id='pr2' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin3"/>
+	<TH id='Dostup3'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t3' style='text-align: left'>
+	<TH id='CompName3' style='text-align: left'>
+	<TH id='Time3' style='text-align: left'>
+	<TH id='d3' style='text-align: left'>
+	<TH id='nd3' style='text-align: left'>
+	<TH id='pr3' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin4"/>
+	<TH id='Dostup4'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t4' style='text-align: left'>
+	<TH id='CompName4' style='text-align: left'>
+	<TH id='Time4' style='text-align: left'>
+	<TH id='d4' style='text-align: left'>
+	<TH id='nd4' style='text-align: left'>
+	<TH id='pr4' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin5"/>
+	<TH id='Dostup5'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t5' style='text-align: left'>
+	<TH id='CompName5' style='text-align: left'>
+	<TH id='Time5' style='text-align: left'>
+	<TH id='d5' style='text-align: left'>
+	<TH id='nd5' style='text-align: left'>
+	<TH id='pr5' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin6"/>
+	<TH id='Dostup6'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t6' style='text-align: left'>
+	<TH id='CompName6' style='text-align: left'>
+	<TH id='Time6' style='text-align: left'>
+	<TH id='d6' style='text-align: left'>
+	<TH id='nd6' style='text-align: left'>
+	<TH id='pr6' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin7"/>
+	<TH id='Dostup7'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t7' style='text-align: left'>
+	<TH id='CompName7' style='text-align: left'>
+	<TH id='Time7' style='text-align: left'>
+	<TH id='d7' style='text-align: left'>
+	<TH id='nd7' style='text-align: left'>
+	<TH id='pr7' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin8"/>
+	<TH id='Dostup8'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t8' style='text-align: left'>
+	<TH id='CompName8' style='text-align: left'>
+	<TH id='Time8' style='text-align: left'>
+	<TH id='d8' style='text-align: left'>
+	<TH id='nd8' style='text-align: left'>
+	<TH id='pr8' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin9"/>
+	<TH id='Dostup9'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t9' style='text-align: left'>
+	<TH id='CompName9' style='text-align: left'>
+	<TH id='Time9' style='text-align: left'>
+	<TH id='d9' style='text-align: left'>
+	<TH id='nd9' style='text-align: left'>
+	<TH id='pr9' style='text-align: left'>
+</TR>
+<TR>
+	<TD><input type="CheckBox" name="pin10"/>
+	<TH id='Dostup10'><img src='config/4.png' alt='ON-OFF'>
+	<TH id='t10' style='text-align: left'>
+	<TH id='CompName10' style='text-align: left'>
+	<TH id='Time10' style='text-align: left'>
+	<TH id='d10' style='text-align: left'>
+	<TH id='nd10' style='text-align: left'>
+	<TH id='pr10' style='text-align: left'>
+</TR>
+</TABLE>
+<div id='option'>
+<TABLE border='1'>
+<TR>
+	<TH><FONT SIZE='' COLOR='#000000'>Таймер: </FONT>
+	<input type='text' id='SetTime' style='text-align: center' size='1' value='10'>
+	<select size='1' name='sTs'>
+        <option value='1'>сек.</option>
+		<option value='60'>мин.</option>
+		<option value='3600'>час.</option>
+    </select>
+	<input type='CheckBox' name='SetTimeProcessing'><FONT SIZE='' COLOR='#000000'>Включить таймер. </FONT>
+	<TH><input type='CheckBox' name='setLog'><FONT SIZE='' COLOR='#000000'>Включить лог. </FONT>
+</TR>
+</TABLE>
+</div>
+<input type='button' id='start' value='Ping'> 
+<input type='button' id='OnClickButtonbtnSET' value='IP ADRESS' onclick='OnClickButtonbtnSET'> 
+<input type='button' value='Обновить' onclick='WindowOnLoad'>
+<TABLE border='1'>
+	<TR>
+		<TD><div id='Version_Div'>Версия: X.X</div> 
+		<TD><span id = 'ProcessList'></span>
+		<TH><FONT SIZE='' COLOR='#000000'>Проверка:  
+		<TH><div id='sTime'></div>
+	</TR>
+</TABLE>
+</body>
+</html>
